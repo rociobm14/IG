@@ -1,0 +1,32 @@
+Esta práctica se corresponde con la práctica 2 de la asignatura de Informática Gráfica. 
+En esta, lo que he trabajado es la representación de figuras con mallas de triángulos, y 
+la representación de objetos de revolución. Además de otros modos de visualización.
+Los archivos ply usados se encuentran dentro de la carpeta "plys", proporcionada por el profesor.
+Cabe destacar que he trabajado también con POO para no repetir código y aprovechar al máximo los
+recursos/funciones realizadas.
+Para la puntuación de esta práctica, me he centrado en realizar las siguientes tareas:
+
+  - Representación de una malla de Triángulos, la cuál lee archivos ply y los representa a través de 
+  mallas de triángulos, creando para ello una estructura que sea capaz de leer las caras y los vértices
+  correspondientes  a los archivos ply cargados y guardarlos en dichas estructuras. 
+  En esta clase también se calculan funciones para calcular tanto las normales de caras como las normales 
+  de vértices. Las normales de caras suelen ir asociadas con el shade model GL_FLAT, que dibuja una figura
+  con un sombreado más plano y marcado.
+  En cambio, las normales de vértices suelen ir asociadas con el shade model GL_SMOOTH, que dibuja
+  las figuras con un sombreado más suave. Por tanto, habrá dos draw, uno para dibujar a partir de las
+  normales de cara, y otro para dibujar a partir de las normales de vértices. 
+  En concreto, he representado la figura "bethoveen.ply" con las normales de vértices (GL_SMOOTH) y la
+  figura "big_dodge.ply" con las normales de caras (GL_FLAT), ambas con distintos colores
+  
+  - Representación de una malla de Revolución, la cual hereda de la de triángulo, y también lee 
+  archivos de revolución ply y los representa. En esta clase se deben re calcular las caras y vértices
+  de los archivos ply, ya que no se calculan de la misma forma que en las mallas de triángulo. Esta
+  clase heredará las funciones draw y de cálculo de normales. LA figura que he representado es la
+  del peón.
+  
+Además, estas figuras tienen por defecto también aplicada la activación y desactivación de la iluminación
+y la representación de los distintos modos de visualización con GL_FILL, GL_LINES, GL_POINT, de la
+práctica anterior. De esta manera podemos comprobar que realmente estos archivos están hechos con la
+representación de triángulos.
+
+  
